@@ -1,0 +1,22 @@
+<h3>Modify Product</h3>
+
+<div class="clsmat">
+    <!-- <mat-form-field appearance="fill">
+      <mat-label>Enter Productid</mat-label>
+      <input matInput [(ngModel)]="product.id">
+    </mat-form-field> -->
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Productname</mat-label>
+      <input matInput value={{productobj.pname}}>
+      <!-- <input matInput  [(ngModel)]="productobj.pname"> -->
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Category</mat-label>
+        <input matInput [(ngModel)]="productobj.category">
+      </mat-form-field>
+</div>
+
+<button (click)="Callclose()">Cancel</button>
+<button (click)="callupdate()">Update</button>

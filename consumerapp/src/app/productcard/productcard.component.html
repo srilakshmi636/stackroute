@@ -1,0 +1,17 @@
+<section class="clsdisplay">
+<mat-card class="clscard"  (click)="update()">
+    <mat-card-header>
+      <mat-card-title>Product id : {{myproduct.id}} </mat-card-title>
+       
+    </mat-card-header>
+  
+    <mat-card-content>
+      <p> {{myproduct.pname}} </p>
+
+      <p>   {{myproduct.category}}  </p>
+    </mat-card-content>
+    
+  </mat-card>
+<button (click)="delete()">Delete</button>
+<!-- <button (click)="update()">Update</button> -->
+</section>

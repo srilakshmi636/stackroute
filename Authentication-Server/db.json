@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": "30",
+      "pname": "Monitor",
+      "category": "output"
+    },
+    {
+      "id": "34",
+      "pname": "scanner",
+      "category": "output"
+    },
+    {
+      "id": "45",
+      "pname": "Mouse",
+      "category": "input"
+    },
+    {
+      "id": "0900",
+      "pname": "Speaker",
+      "category": "output"
+    },
+    {
+      "id": "0901",
+      "pname": "Speaker",
+      "category": "output"
+    }
+  ]
+}

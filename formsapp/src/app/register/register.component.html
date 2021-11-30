@@ -1,0 +1,40 @@
+
+
+
+<h1> Data from parent is {{company}}</h1>
+
+
+<form #myuser="ngForm" (ngSubmit)="display(myuser)">
+
+    <div class="clsform">
+
+<input #uname="ngModel" [(ngModel)]="userobj.username" placeholder="enter username" name="uname" required>
+
+
+
+<div *ngIf="uname.touched && uname.dirty">
+    <div *ngIf="uname.invalid">
+        <span>name can not be null</span>
+    </div>
+</div>
+
+<input #pass="ngModel" [(ngModel)]="userobj.password" placeholder="enter password" 
+            name="password" required minlength="3">
+
+<div *ngIf="pass.invalid && (pass.touched)">
+    <small *ngIf="pass.errors?.minlength">Password should have minimum 3 char</small>
+    <small *ngIf="pass.errors?.required">Password Cannot be null</small>
+
+</div>
+
+ <input #addr="ngModel" [(ngModel)]="userobj.address"  placeholder="enter addres"
+            name="address" required>
+
+    <small *ngIf="addr.errors?.required">Address Can not be null</small>
+
+
+</div>
+                                    
+<button type="submit" [disabled]="!myuser.form.valid">Sign In</button>
+
+</form>

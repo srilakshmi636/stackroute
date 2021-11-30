@@ -1,0 +1,6 @@
+.clsmat
+{
+    display: flex;
+    flex-direction: column;
+    background: lime;
+}

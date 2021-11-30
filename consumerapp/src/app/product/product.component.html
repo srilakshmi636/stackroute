@@ -1,0 +1,50 @@
+
+<mat-expansion-panel class="clsmatexpansion">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        ABC company
+      </mat-panel-title>
+      <mat-panel-description>
+        Product Add
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  <div class="clsmat">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Productid</mat-label>
+      <input matInput [(ngModel)]="product.id">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Productname</mat-label>
+      <input matInput  [(ngModel)]="product.pname">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Category</mat-label>
+        <input matInput [(ngModel)]="product.category">
+      </mat-form-field>
+</div>
+<button (click)="addproduct()">Add PRoduct</button>
+  </mat-expansion-panel>
+
+
+ <div class="clsmatdisplay">
+  <mat-card class="example-card" *ngFor="let prdobj of products">
+    <mat-card-header>
+      <mat-card-title>Product id : {{prdobj.id}} </mat-card-title>
+       
+    </mat-card-header>
+  
+    <mat-card-content>
+      <p> {{prdobj.pname}} </p>
+      <p>   {{prdobj.category}}  </p>
+    </mat-card-content>
+    
+  </mat-card>
+</div>
+
+
+<span>{{emessage}}</span>
+
+

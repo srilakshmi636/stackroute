@@ -1,0 +1,15 @@
+{
+  "products": [
+   
+    {
+      "id": "20",
+      "pname": "keyboard",
+      "category": "input"
+    },
+    {
+      "id": "30",
+      "pname": "pendrive",
+      "category": "output"
+    }
+  ]
+}

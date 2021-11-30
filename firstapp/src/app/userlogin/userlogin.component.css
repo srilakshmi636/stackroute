@@ -1,0 +1,11 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .clsmat
+  {
+      display: flex;
+      flex-direction: column;
+  }

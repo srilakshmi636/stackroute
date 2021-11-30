@@ -1,0 +1,38 @@
+
+<mat-expansion-panel class="clsmatexpansion">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        ABC company
+      </mat-panel-title>
+      <mat-panel-description>
+        Product Add
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  <div class="clsmat">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Productid</mat-label>
+      <input matInput id="pid" [(ngModel)]="product.id">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Productname</mat-label>
+      <input matInput id="pname" [(ngModel)]="product.pname">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter Category</mat-label>
+        <input matInput id="category" [(ngModel)]="product.category">
+      </mat-form-field>
+</div>
+<button id="butadd" (click)="addproduct()">Add PRoduct</button>
+  </mat-expansion-panel>
+
+
+
+
+
+<span>{{emessage}}</span>
+
+
+

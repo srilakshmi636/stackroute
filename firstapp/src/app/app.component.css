@@ -1,0 +1,20 @@
+.clsmy
+{
+    background: yellow;
+}
+
+h1
+{
+    margin: 0px;
+}
+.clstud
+{
+    width:200px;
+    display: flex;
+    flex-direction: column;
+}
+.clscard
+{
+    width:150px;
+    height:150px;
+}

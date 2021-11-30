@@ -1,0 +1,20 @@
+<section class="clsmatdisplay">
+   
+<h3> Input elements -----> </h3>
+    <div *ngFor="let prodobj of productinput">
+
+    <app-productcard [myproduct]="prodobj"></app-productcard>
+
+</div>
+
+
+
+<h3> Output elements -----> </h3>
+<div *ngFor="let prodobj of productoutput">
+
+    <app-productcard [myproduct]="prodobj"></app-productcard>
+
+</div>
+
+
+</section>
